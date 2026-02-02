@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans text-gray-800 bg-gray-100 pt-20">
+    <div class="container mx-auto flex rows justify-center">
+      <div class="box-border">
+        <form action="" method="post" onsubmit="return validationlogin();">
+          <h2>login</h2>
+          <label for="username">username : </label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="username"
+            required
+          />
+          <br />
+          <label for="password">password : </label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="password"
+            required
+          />
+          <br />
+          <button value="submit" class="bg-blue-500">submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
