@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+  </head>
+
+  <body class="font-sans text-gray-800 bg-gray-100 pt-20">
+    <!-- ================= HEADER ================= -->
+    <header class="fixed top-0 z-50 w-full bg-slate-800 text-white">
+      <nav>
+        <div
+          class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+        >
+          <div class="text-xl font-bold">Brand Kita</div>
+
+          <button id="menu-btn" class="md:hidden">
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+
+          <!-- Menu Dekstop -->
+          <ul class="hidden md:flex gap-6">
+            <li><a href="#" class="hover:text-blue-400">Home</a></li>
+            <li><a href="#about" class="hover:text-blue-400">Tentang</a></li>
+            <li><a href="#contact" class="hover:text-blue-400">Kontak</a></li>
+             <li><a href="#login.html" class="hover:text-blue-400">login</a></li>
+          </ul>
+        </nav>
+
+        <!-- Menu Mobile -->
+        <div id="menu" class="hidden md:hidden px-6 pb-4">
+          <ul class="flex flex-col gap-4 text-center">
+            <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+            <li><a href="#about" class="hover:text-blue-400">About us</a></li>
+            <li><a href="#portfolio" class="hover:text-blue-400">portfolio</a></li>
+            <li><a href="#contact" class="hover:text-blue-400">contact</a></li>
+            <li><a href="#login.html" class="hover:text-blue-400">login</a></li>
+          </ul>
+        </div>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section
+      id="hero"
+      class="relative h-[80vh] flex items-center justify-center text-center bg-[url('img/pemandangan.jpg')] bg-cover bg-[center_top] px-4"
+    >
+      <div class="absolute inset-0 bg-black/60"></div>
+
+      <div class="relative z-10">
+        <h1
+          class="text-3xl sm:text-4xl md:text-6xl font-extrabold text-white mb-4"
+        >
+          Selamat Datang di Website Kami
+        </h1>
+
+        <p class="text-gray-200 text-lg mb-8">
+          Halaman ini adalah halaman utama website perusahaan
+        </p>
+
+        <a
+          href="#portfolio"
+          class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold"
+        >
+          Lihat Portfolio
+        </a>
+
+        <div
+          class="mt-8 flex flex-wrap justify-center gap-6 text-sm text-white"
+        >
+          <div><span class="font-bold">50+</span> project</div>
+          <div><span class="font-bold">10+</span> client</div>
+          <div><span class="font-bold">3+</span> tahun pengalaman</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="py-20 bg-white">
+      <div
+        class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center"
+      >
+        <div>
+          <h2 class="text-3xl font-bold mb-4">About Us</h2>
+          <p class="text-gray-600 mb-4">
+            Saya adalah pelajar RPL kelas XI di SMK Kosgoro Bogor yang memiliki
+            minat besar dalam pengembangan website modern dan responsif.
+          </p>
+          <p class="text-gray-600">
+            Melalui portofolio ini, saya menampilkan berbagai proyek dan proses
+            belajar saya.
+          </p>
+        </div>
+
+        <div class="space-y-6">
+          <div class="bg-gray-100 p-6 rounded-lg shadow">
+            <h3 class="text-xl font-semibold mb-2">Visi Kami</h3>
+            <p class="text-gray-600">
+              Menjadi web developer profesional yang mampu menciptakan solusi
+              digital kreatif.
+            </p>
+          </div>
+
+          <div class="bg-gray-100 p-6 rounded-lg shadow">
+            <h3 class="text-xl font-semibold mb-2">Nilai Kami</h3>
+            <ul class="space-y-2 text-gray-700">
+              <li>✔ Desain modern & responsif</li>
+              <li>✔ Kode bersih</li>
+              <li>✔ Fokus UX</li>
+              <li>✔ Mudah dikembangkan</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section class="py-16 bg-gray-100">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-10">Layanan Kami</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Card -->
+          <div
+            class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition hover:-translate-y-1"
+          >
+            <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+            <p class="text-gray-600">Website cepat, aman, dan responsif.</p>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition hover:-translate-y-1"
+          >
+            <h3 class="text-xl font-semibold mb-2">UI / UX Design</h3>
+            <p class="text-gray-600">Desain nyaman & meningkatkan konversi.</p>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition hover:-translate-y-1"
+          >
+            <h3 class="text-xl font-semibold mb-2">Maintenance</h3>
+            <p class="text-gray-600">Perawatan & pengembangan berkelanjutan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PORTFOLIO ================= -->
+    <section id="portfolio" class="py-20 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-10">Portofolio Kami</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div
+            class="bg-white rounded-xl shadow overflow-hidden hover:shadow-xl transition hover:-translate-y-1"
+          >
+            <div class="w-full h-56 overflow-hidden">
+              <img
+                src="img/commpanyprofile.jpeg"
+                alt="Company Profile"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Company Profile</h3>
+              <p class="text-gray-600 mb-3">
+                Website profil perusahaan modern.
+              </p>
+
+              <div class="flex gap-2 text-xs">
+                <span
+                  class="px-2 py-1 bg-red-100 text-red-500 rounded font-medium"
+                  >HTML</span
+                >
+                <span
+                  class="px-2 py-1 bg-blue-100 text-blue-500 rounded font-medium"
+                  >Tailwind</span
+                >
+                <span
+                  class="px-2 py-1 bg-green-100 text-green-500 rounded font-medium"
+                  >CSS</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="py-16 bg-white">
+      <div class="max-w-xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-10">Kontak Kami</h2>
+
+        <form
+          name="nameform"
+          class="bg-gray-100 p-8 rounded-xl shadow space-y-4"
+        >
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Nama"
+            class="w-full px-4 py-3 rounded-lg border focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
+          />
+
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            class="w-full px-4 py-3 rounded-lg border focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
+          />
+
+          <textarea
+            name="pesan"
+            id="pesan"
+            placeholder="Pesan"
+            rows="4"
+            class="w-full px-4 py-3 rounded-lg border focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
+          ></textarea>
+
+          <button
+            type="submit"
+            class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold"
+          >
+            Kirim
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-slate-800 text-white text-center p-6">
+      <p>&copy; 2026 Brand Kita</p>
+    </footer>
+
+    <!-- ================= SCRIPT ================= -->
+    <script>
+      const btn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+
+    <script>
+      function validateform() {
+        const name = document.forms["nameform"]["name"].value.trim();
+        const email = document.forms["nameform"]["email"].value.trim();
+        const pesan = document.forms["nameform"]["pesan"].value.trim();
+
+        if (name == "") {
+          alert("nama nya woi!");
+          return false;
+        }
+
+        if (email == "") {
+          alert("segala lupa email!");
+          return false;
+        }
+
+        if (pesan == "") {
+          alert("pesan diisi dengan baik!");
+          return false;
+        }
+      }
+    </script>
+<script>
+document.forms["nameform"].addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const name = document.forms["nameform"]["name"].value;
+  const email = document.forms["nameform"]["email"].value;
+  const message = document.forms["nameform"]["pesan"].value; // ← FIX DI SINI
+
+  const data = {
+    nama: name,
+    email: email,
+    message: message
+  };
+
+  let listdata = JSON.parse(localStorage.getItem("pesan")) || [];
+  listdata.push(data);
+
+  localStorage.setItem("pesan", JSON.stringify(listdata));
+
+  console.log("Tersimpan:", listdata);
+  alert("Pesan berhasil disimpan!");
+
+  document.forms["nameform"].reset();
+});
+</script>
+
+
+     </body>
+</html>
+</body>
+</html>
